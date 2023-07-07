@@ -1,0 +1,112 @@
+html {
+    /* esta regla incluye el padding dentro del width*/
+    box-sizing: border-box; 
+}
+
+body {
+    background-image: url(../img/fondo.png);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 95%;
+    margin: 0 auto; /* centrar el contenedor */
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 150px; /* alto*/
+    background-image: linear-gradient(to right, #82bdf5, #059EA9);
+    border-radius: 5px;
+}
+
+.encabezado img {
+    width: 90px;
+    margin-left: 25px;
+}
+
+.encabezado .titulo {
+    margin-right: 20px;
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+.encabezado .titulo .texto {
+    color: #f376e9;
+}
+
+/* Barra de navegación*/
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    margin-top: 10px; /*Desplazar hacia arriba o hacia abajo*/
+    border-radius: 5px; /* Para poner bordes redondos*/
+    border: 2px solid grey;
+    box-shadow: 3px 3px 2px #779191 ; /* Es para poner sobras*/
+
+    display: flex; /* Sirve para ponerle cajas*/
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    /* Para separar*/
+    font-size: 1.1rem; 
+    color: #302f2f;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+   color: #cc48ec;
+}
+
+/* Área principal*/
+main {
+    width: 100%;
+    background-color: white;
+    height: 400px;
+    margin-top: 12px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    box-shadow: 3px 3px 2px #779191;
+
+    color: #474747;
+}
+
+.main h1 {
+    color: #416ece;
+
+}
+
+/* Pie de página*/
+footer {
+    background-color: #c8e0f6;
+    width: 100%;
+    height: 70px;
+    margin-top: 12px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    box-shadow: 3px 3px 2px #779191;
+    text-align: center;
+
+}
+
+/* Contenedor pie*/
+.pie {
+    padding-top: 40px;
+}

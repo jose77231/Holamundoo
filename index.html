@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="UPB, escuela, alumnos">
+    <meta name="author" content="Esdras Chuc">
+    <meta name="description" content="Sitio web Informativo de la Universidad Politécnica de Bacalar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Escuela Web</title>
+</head>
+<body>
+    <div class="contenedor">
+        <!-- encabezado -->
+        <header>
+            <div class="encabezado">
+                <!-- img logo -->
+                <img src="img/logo_UPB.png" alt="Logo_upb">
+                <div class="titulo">
+                    UPB <span class="texto">Ing SW</span>
+                </div> <!-- titulo-->
+            </div> <!-- fin de encabezado -->
+        </header>
+        <!-- Barra de navegación -->
+        <nav>
+            <div class="menu">
+                <a href="index.html"><img src="img/02_home.png" alt=""></a>
+                <a href="#">Inicio</a> 
+                <a href="#">Reportes</a>
+                <a href="#">Calificaciones</a>
+            </div>
+        </nav>
+        <!-- area principal -->
+        <main>
+            <h1>Bienvenido al Sitio de la UPB</h1>
+            <div class="contenido">
+                <h3>Información importante</h3>
+                <p>
+                    Estamos agradecidos por entrar al sitio
+                </p>
+            </div><!-- contenido-->
+        </main>
+        <!-- Pie de página -->
+        <footer>
+            <div class="contenedor pie">
+                UPB &copy; |Ing. Leydy Daniela Juarez Olvera | Fecha
+                <span id="fecha"></span>
+                <script>
+                    //javascript para que obtenga la fecha del sistema
+                    var fecha = new Date();
+                    document.getElementById("fecha").innerHTML = 
+                    fecha.toLocaleDateString();
+                </script>
+            </div> <!-- contenedor pie -->
+        </footer>
+    </div> <!-- contenedor-->
+</body>
+</html>
